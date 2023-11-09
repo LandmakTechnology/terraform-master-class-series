@@ -32,6 +32,9 @@ provider "aws" {
 ```
 
 ## Block-3: **Resource Block**
+A Resource Block declares a resource of a given type ("aws_instance") with a given local name ("web").
+The name is used to refer to this resource from elsewhere in the same Terraform module,
+but has no significance outside that module's scope.
 ```
 resource "aws_instance" "inst1" {
   ami           = "ami-0e5b6b6a9f3db6db8" # Amazon Linux
