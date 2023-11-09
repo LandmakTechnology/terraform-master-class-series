@@ -116,6 +116,9 @@ data "aws_ami" "amzLinux" {
 ```
 
 ## Block-8: **Modules Block**
+A Terraform Module is a collection of standard configuration files in a dedicated directory.
+Terraform modules encapsulate groups of resources dedicated to one task, reducing the
+amount of code you have to develop for similar infrastructure components.
 - An example of an AWS EC2 Instance Module from the terraform registry.
 ```
 module "ec2_cluster" {
@@ -140,6 +143,8 @@ module "ec2_cluster" {
 ```
 
 ## Block-9: **Moved Blocks**
+A Moved Block is a configuration block that tracks resource moves.
+It allows you to instruct Terraform that a resource or data source has a new ID.
 ```
 moved {
   from = "aws_instance.my_ec2"
@@ -148,6 +153,9 @@ moved {
 ```
 
 ## Block-10: **Import Blocks**
+The Import Block is a feature that allows users to import existing infrastructure
+resources into Terraform, bringing them under Terraform's management.
+This feature was introduced in Terraform v1.5.0.
 ```
 import {
   to = aws_vpc.my_vpc
