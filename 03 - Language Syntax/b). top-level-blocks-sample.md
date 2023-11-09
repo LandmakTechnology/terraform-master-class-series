@@ -84,6 +84,9 @@ bucket_name = local.name
 ```
 
 ## Block-7: **Data sources Block**
+Data blocks are used to define and configure Data Sources.
+Data Sources are used to fetch data from a remote system and use it in your infrastructure.
+E.g. A data source can be used to get a list of IP address tha a cloud provider exposes.
  - This example is used to get the latest AMI ID for Amazon Linux2 OS
 ```
 data "aws_ami" "amzLinux" {
