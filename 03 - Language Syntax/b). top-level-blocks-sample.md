@@ -58,6 +58,10 @@ variable "instance_type" {
 ```
 
 ## Block-5: **Output Values Block**
+Terraform Output Values let you export structured data about your resources.
+You can use this data to configure other parts or your infrastructure with automation tools,
+or as a data source for another Terraform workspace. Outputs are how you expose data
+from a child module to a root module.
 ```
 output "ec2_instance_publicip" {
   description = "EC2 Instance Public IP"
