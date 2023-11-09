@@ -1,4 +1,6 @@
 # Terraform 10 high level blocks
+In Terraform, a block is a fundamental unit used to define and configure
+different aspects of your infrastructure.
 
 ## Block-1: **Terraform Settings Block**
 This is used to configure some behaviours of Terraform itself,
