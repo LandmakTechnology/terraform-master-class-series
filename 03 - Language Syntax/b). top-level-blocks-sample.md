@@ -70,7 +70,11 @@ output "ec2_instance_publicip" {
 ```
 
 ## Block-6: **Local Values Block**
- - An example to have a bucket name that is a concatenation of an app name and environment name.
+A Locals block is used to define local variables within a module.
+A Local Value assigns a name to a Terraform expression, allowing it to be used multiple times
+within a module without repeating the expression.
+It mainly serves the purpose of reducing duplication within the Terraform code.
+ - An example to have is a bucket name that is a concatenation of an app name and environment name.
 ```
 locals {
   name = "${var.app_name}-${var.environment_name}"
