@@ -2,7 +2,7 @@
 
 ## Block-1: **Terraform Settings Block**
 This is used to configure some behaviours of Terraform itself,
-such as requiring a minimum Terraform version to apply your configuration
+such as requiring a minimum Terraform version to apply your configuration.
 ```
 terraform {
   required_version = "~> 1.0" #1.1.4/5/6/7   1.2/3/4/5 1.1.4/5/6/7
@@ -17,6 +17,12 @@ terraform {
 
 
 ## Block-2: **Provider Block**
+Provider Block configuration allows Terraform to interact with cloud providers, SaaS providers,
+and other APIs.
+Some providers require you to configure them with endpoint URLs, cloud regions, or other
+settings before Terraform can use them.
+Additionally, all Terraform configurations MUST declare which providers they require
+so that Terraform can install and use them.
 ```
 provider "aws" {
   profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
