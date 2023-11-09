@@ -17,6 +17,7 @@ terraform {
 
 
 ## Block-2: **Provider Block**
+A Provider in Terraform is a plugin that enables interaction with an API.
 Provider Block configuration allows Terraform to interact with cloud providers, SaaS providers,
 and other APIs.
 Some providers require you to configure them with endpoint URLs, cloud regions, or other
