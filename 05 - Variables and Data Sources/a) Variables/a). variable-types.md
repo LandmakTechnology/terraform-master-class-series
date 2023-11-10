@@ -24,6 +24,10 @@ variable "sshport" {
   type    = number
   default = 22
 }
+
+variable "https" {
+  type    = number
+  default = 443
 ```
 
 **Boolean**
@@ -32,7 +36,10 @@ variable "sshport" {
 variable "enabled" {
   default = false
 }
-```
+
+variable "nat-gateway" {
+  default = true
+}```
 **List**
 - Lists is represented by a pair of square brackets containing a comma-separated sequence of values, like ["a", 15, true].
 ```t
