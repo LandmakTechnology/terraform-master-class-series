@@ -46,7 +46,7 @@ resource "aws_instance" "inst1" {
 
 ## Block-4: **Input Variables Block**
 Terraform Input Variables are used as parameters to input values at run time to customize our
-deployments. Input terraform variables can be defined in the main.tf configuration file bur it
+deployments. Input terraform variables can be defined in the main.tf configuration file but it
 is a best practice to define them ins a separate variable.tf file to provide better readability
 and organization.
 ```
