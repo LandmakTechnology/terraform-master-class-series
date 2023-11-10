@@ -39,7 +39,9 @@ variable "enabled" {
 
 variable "nat-gateway" {
   default = true
-}```
+}
+```
+
 **List**
 - Lists is represented by a pair of square brackets containing a comma-separated sequence of values, like ["a", 15, true].
 ```t
