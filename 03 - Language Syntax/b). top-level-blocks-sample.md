@@ -58,7 +58,8 @@ variable "instance_type" {
 ```
 
 ## Block-5: **Output Values Block**
-Terraform Output Values let you export structured data about your resources.
+Terraform Output Values let you export structured data about your resources. If we want to get an attribute 
+out of our resource after creation, we have to use this block at run time.
 You can use this data to configure other parts or your infrastructure with automation tools,
 or as a data source for another Terraform workspace. Outputs are how you expose data
 from a child module to a root module.
