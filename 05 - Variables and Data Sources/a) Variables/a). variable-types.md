@@ -1,4 +1,4 @@
-1. ## **Variables**
+ ## **1. Variables**
 
 - A variable is a value that can change, depending on conditions or on information passed to the program.
 - Variables are used to store information to be referenced and manipulated in a computer program.
