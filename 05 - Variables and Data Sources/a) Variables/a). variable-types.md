@@ -30,7 +30,7 @@ variable "https" {
   default = 443
 ```
 
-**Boolean**
+**3. Boolean**
 - Bools are represented by the unquoted symbols true and false.
 ```t
 variable "enabled" {
@@ -42,7 +42,7 @@ variable "nat-gateway" {
 }
 ```
 
-**List**
+**4. List**
 - Lists is represented by a pair of square brackets containing a comma-separated sequence of values, like ["a", 15, true].
 ```t
 variable "mylist" {
@@ -54,7 +54,7 @@ variable "mylist" {
 
      - instance_type = var.mylist[1]
 
-**Map**
+**5. Map**
 - Maps/objects are represented by a pair of curly braces containing a series of KEY = VALUE pairs:
 ```T
 variable "mymap" {
@@ -69,7 +69,7 @@ variable "mymap" {
  
     - instance_type = var.mymap["key1"]
 
-**Input**
+**6. Input**
  ```t
 variable "inputname" {
   type        = string
@@ -87,13 +87,13 @@ resource "aws_vpc" "myvpc" {
   }
 }
 ```
-**Output**
+**7. Output**
 ```t
 output "vpcid" {
   value = aws_vpc.myvpc.id
 }
 ```
-**Tuple**
+**8. Tuple**
 - Lists/tuples are represented by a pair of square brackets containing a comma-separated sequence of values, like ["a", 15, true].
 ```t
 variable "mytuple" {
@@ -101,7 +101,7 @@ variable "mytuple" {
   default = ["cat", 1, "dog"]
 }
 ```
-**Objects**
+**9. Objects**
 ```t
 variable "myobject" {
   type = object({ name = string, port = list(number) })
