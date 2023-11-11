@@ -1,4 +1,4 @@
- ## **1. Variables**
+ ## **Variables**
 
 - A variable is a value that can change, depending on conditions or on information passed to the program.
 - Variables are used to store information to be referenced and manipulated in a computer program.
@@ -7,7 +7,7 @@
 
 The following example shows the variable types that are supported by terraform.
 
-**String**
+**1. String**
  - Strings are usually represented by a double-quoted sequence of Unicode characters, "like this"
 ```t
 variable "vpcname" {
@@ -16,7 +16,7 @@ variable "vpcname" {
 }
 
 ```
-**Number**
+**2. Number**
 
 - Numbers are represented by unquoted sequences of digits with or without a decimal point, like 15 or 6.283185.
 ```t
