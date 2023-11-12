@@ -1,8 +1,8 @@
 #1. S3 bucket
 resource "aws_s3_bucket" "backend" {
-  count = var.create_buc ? 1 : 0
+  count = var.create_vpc ? 1 : 0
 
-  bucket = "class33-${random_integer.s3.result}-${var.name}"
+  bucket = "lower(class33-${random_integer.s3.result}-${var.name}"
 
   tags = {
     Name        = "My bucket"
@@ -20,7 +20,7 @@ resource "aws_s3_bucket_public_access_block" "my_bucket" {
   restrict_public_buckets = true
 }
 
-#3. Bucket logging
+#4. Bucket logging
 resource "aws_s3_bucket_logging" "my_bucket" {
   bucket        = aws_s3_bucket.backend[0].bucket
   target_bucket = "landmark-automation-kenmak"
@@ -40,10 +40,6 @@ resource "aws_s3_bucket_versioning" "versioning_example" {
 resource "random_integer" "s3" {
   max = 100
   min = 1
-
-  #keepers = {
-   # bucket_owner = var.name
- # }
 }
 
 #6. KMS for bucket encryption
